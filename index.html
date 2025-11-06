@@ -8,30 +8,115 @@
 </head>
 <body>
 
-    <header>
-        <h1>BlueScreenBoyz</h1>
-        <p>Silence. Precision. Discipline.</p>
+    <!-- TOP NAV -->
+    <header class="topbar">
+        <div class="container nav">
+            <div class="logo">BlueScreenBoyz</div>
+            <nav>
+                <a href="#home">Начало</a>
+                <a href="#services">Услуги</a>
+                <a href="#request">Заявка</a>
+                <a href="#contact">Контакт</a>
+            </nav>
+        </div>
     </header>
 
-    <section id="services">
-        <h2>Нашите услуги</h2>
-        <ul>
-            <li>🖥️ Почистване и оптимизация на компютри и лаптопи</li>
-            <li>⚙️ Инсталация и настройка на Windows</li>
-            <li>🎮 Изграждане на гейминг и стрийминг сетъп</li>
-            <li>💻 Хардуерна диагностика и консултация</li>
-        </ul>
+    <!-- HERO -->
+    <section id="home" class="hero">
+        <div class="container hero-content">
+            <div>
+                <h1>PC, Gaming & Stream Setup Services</h1>
+                <p>Silence. Precision. Discipline. Професионални услуги за компютри, гейминг конфигурации и стрийминг.</p>
+                <a href="#request" class="btn-primary">Изпрати заявка</a>
+            </div>
+            <div class="hero-box">
+                <p class="hero-title">Защо BlueScreenBoyz?</p>
+                <ul>
+                    <li>Бърза реакция</li>
+                    <li>Чист и корпоративен стил</li>
+                    <li>Фокус върху геймъри и създатели на съдържание</li>
+                </ul>
+            </div>
+        </div>
     </section>
 
-    <section id="contact">
-        <h2>Свържи се с нас</h2>
-        <p>📘 Facebook:
-            <a href="https://www.facebook.com/profile.php?id=61579709804546" target="_blank">
-                Нашата Facebook страница
-            </a>
-        </p>
-        <p>📧 Email: <strong>bluescreenboyzbiz@gmail.com</strong></p>
+    <!-- SERVICES -->
+    <section id="services">
+        <div class="container">
+            <h2>Нашите услуги</h2>
+            <p class="section-subtitle">Избери това, което ти трябва.</p>
+            <div class="service-grid">
+                <div class="service-card">
+                    <h3>Почистване и оптимизация</h3>
+                    <p>Премахване на прах, оптимизация на системата, update-и.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Windows инсталация</h3>
+                    <p>Чиста инсталация, драйвери и базов софтуер.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Гейминг / Стрийминг сетъп</h3>
+                    <p>OBS, сцени, alerts, настройки за FPS.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Хардуерна диагностика</h3>
+                    <p>Проверка на компоненти и препоръки за upgrade.</p>
+                </div>
+            </div>
+        </div>
     </section>
+
+    <!-- REQUEST FORM -->
+    <section id="request">
+        <div class="container">
+            <h2>Заявка за услуга</h2>
+            <p class="section-subtitle">Попълни и ще ти отговорим.</p>
+
+            <!-- по-лесен вариант: mailto -->
+            <form action="mailto:bluescreenboyzbiz@gmail.com" method="POST" enctype="text/plain" class="request-form">
+                <div class="form-group">
+                    <label for="name">Име*</label>
+                    <input type="text" id="name" name="Име" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Телефон*</label>
+                    <input type="tel" id="phone" name="Телефон" required placeholder="+359...">
+                </div>
+                <div class="form-group">
+                    <label for="service">Услуга*</label>
+                    <select id="service" name="Услуга" required>
+                        <option value="">-- избери --</option>
+                        <option>Почистване и оптимизация</option>
+                        <option>Инсталация на Windows</option>
+                        <option>Гейминг / Стрийминг сетъп</option>
+                        <option>Хардуерна диагностика</option>
+                    </select>
+                </div>
+                <div class="form-group full">
+                    <label for="message">Допълнителна информация</label>
+                    <textarea id="message" name="Описание" rows="4" placeholder="Опиши проблема или желаната услуга"></textarea>
+                </div>
+                <button type="submit" class="btn-primary">Изпрати</button>
+            </form>
+
+            <p class="mini-info">* Ако искаш по-професионално изпращане (без да отваря пощата на клиента), после ще ти го вържа към Formspree.</p>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <div class="container contact-box">
+            <h2>Контакт</h2>
+            <p>📘 Facebook:
+                <a href="https://www.facebook.com/profile.php?id=61579709804546" target="_blank">Нашата Facebook страница</a>
+            </p>
+            <p>📧 Email: <strong>bluescreenboyzbiz@gmail.com</strong></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 BlueScreenBoyz. Всички права запазени.</p>
+    </footer>
 
 </body>
 </html>
